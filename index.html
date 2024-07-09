@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- <meta name="robots" content="noindex" /> -->
+	<meta name="description" content="フリーランスWebコーダーの宮竹亜貴子と申します。Webサイトの制作、修正を承っております。お気軽にご相談ください。" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script defer src="js/script.js"></script>
+	<script defer src="https://kit.fontawesome.com/79f2330fc3.js" crossorigin="anonymous"></script>
+	<title>Akiko Miyatake Portfolio</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__inner">
+			<h1 class="header__logo">
+				<a href="#" class="header__logo__link"><img src="img/AIM_logo.webp" alt="AIM"></a>
+			</h1>
+			<nav class="header__nav">
+				<ul class="header__nav__list">
+					<li class="header__nav__item">
+						<a href="#works" class="header__nav__link">Works</a>
+					</li>
+					<li class="header__nav__item">
+						<a href="#service" class="header__nav__link">Service</a>
+					</li>
+					<li class="header__nav__item">
+						<a href="#about" class="header__nav__link">About me</a>
+					</li>
+					<li class="header__nav__item">
+						<a href="#contact" class="header__nav__link">Contact</a>
+					</li>
+				</ul>
+			</nav>
+			<button class="header__drawer-icon">
+				<span class="header__drawer-icon__bar"></span>
+				<span class="header__drawer-icon__bar"></span>
+				<span class="header__drawer-icon__bar"></span>
+			</button>
+		</div>
+	</header>
+
+	<div class="modal" id="modal">
+		<nav class="modal__nav">
+			<ul class="modal__nav__list">
+				<li class="modal__nav__item">
+					<a href="index.html" class="modal__nav__link">
+						<div class="modal__nav__link__left">
+							<span class="modal__nav__link__text">TOP</span>
+						</div>
+						<span class="modal__mav__link__right">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+								<path d="M1 8H15" stroke="#444" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+								<path d="M8.39453 1L15.0001 8L8.39453 15" stroke="#444" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</span>
+					</a>
+				</li>
+				<li class="modal__nav__item">
+					<a href="#works" class="modal__nav__link">
+						<div class="modal__nav__link__left">
+							<span class="modal__nav__link__text">Works</span>
+						</div>
+						<span class="modal__mav__link__right">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+								<path d="M1 8H15" stroke="#444" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+								<path d="M8.39453 1L15.0001 8L8.39453 15" stroke="#444" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</span>
+					</a>
+				</li>
+				<li class="modal__nav__item">
+					<a href="#service" class="modal__nav__link">
+						<div class="modal__nav__link__left">
+							<span class="modal__nav__link__text">Service</span>
+						</div>
+						<span class="modal__mav__link__right">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+								<path d="M1 8H15" stroke="#444" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+								<path d="M8.39453 1L15.0001 8L8.39453 15" stroke="#444" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</span>
+					</a>
+				</li>
+				<li class="modal__nav__item">
+					<a href="#about" class="modal__nav__link">
+						<div class="modal__nav__link__left">
+							<span class="modal__nav__link__text">About me</span>
+						</div>
+						<span class="modal__mav__link__right">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+								<path d="M1 8H15" stroke="#444" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+								<path d="M8.39453 1L15.0001 8L8.39453 15" stroke="#444" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</span>
+					</a>
+				</li>
+				<li class="modal__nav__item">
+					<a href="#contact" class="modal__nav__link">
+						<div class="modal__nav__link__left">
+							<span class="modal__nav__link__text">Contact</span>
+						</div>
+						<span class="modal__mav__link__right">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+								<path d="M1 8H15" stroke="#444" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+								<path d="M8.39453 1L15.0001 8L8.39453 15" stroke="#444" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="hero" id="hero">
+		<div class="hero__inner inner">
+			<div class="hero__text__container">
+				<h1 class="hero__heading">
+					<span class="hero__heading__sub-title">Web Corder</span><br>
+					<span class="hero__heading__sub-name">Akiko Miyatake</span>
+				</h1>
+				<p class="hero__text">丁寧できちんとしたコーディング</p>
+			</div>
+			<div class="hero__circle__container">
+				<div class="hero__circle"></div>
+				<div class="hero__circle"></div>
+				<div class="hero__circle"></div>
+				<div class="hero__circle"></div>
+				<div class="hero__circle"></div>
+				<div class="hero__circle"></div>
+				<div class="hero__circle"></div>
+				<div class="hero__circle"></div>
+				<div class="hero__circle"></div>
+				<div class="hero__circle"></div>
+			</div>
+		</div>
+	</div>
+
+	<section id="works" class="section works">
+		<div class="section__inner works__inner">
+			<h2 class="section__head">
+				<span class="section__head-main">Works</span>
+				<span class="section__head-sub">制作実績</span>
+			</h2>
+			<div class="section__contents">
+				<div class="works__slider">
+					<div class="swiper works__swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="works__slide__item">
+									<div class="works__slide__item__img">
+										<img src="img/honjohlab_website.webp" alt="" />
+									</div>
+									<div class="works__slide__item__desc">
+										<h3 class="works__slide__item__name">筑波大学本城研究室Webサイト</h3>
+										<button class="works__slide__item__btn" data-number="1">詳細を見る<span class="arrow-right">&#x21C0;</span><span></span><span></span></button>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="works__slide__item">
+									<div class="works__slide__item__img">
+										<img src="img/portfolio_website.webp" alt="This website image" />
+									</div>
+									<div class="works__slide__item__desc">
+										<h3 class="works__slide__item__name">当ポートフォリオサイト</h3>
+										<button class="works__slide__item__btn" data-number="2">詳細を見る<span class="arrow-right">&#x21C0;</span><span></span><span></span></button>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="works__slide__item">
+									<div class="works__slide__item__img">
+										<img src="img/dentalclinic_website.webp" alt="" />
+									</div>
+									<div class="works__slide__item__desc">
+										<h3 class="works__slide__item__name">架空歯科医院Webサイト</h3>
+										<button class="works__slide__item__btn" data-number="3">詳細を見る<span class="arrow-right">&#x21C0;</span><span></span><span></span></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+						<div class="swiper-button-prev"><i class="fa-solid fa-circle-chevron-left"></i></div>
+						<div class="swiper-button-next"><i class="fa-solid fa-circle-chevron-right"></i></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="works__modal">
+		<div class="works__modal__card works--1">
+			<div class="works__modal__card__inner">
+				<div class="works__modal__close">
+					<span class="material-symbols-outlined works__modal__close-icon">close</span>
+				</div>
+				<div class="works__modal__img">
+					<img src="img/honjohlab_website.png" alt="Honjog Lab Website Image">
+				</div>
+				<div class="works__modal__desc">
+					<a href="https://www.u.tsukuba.ac.jp/~honjoh.sakiko.gf/index.html" target="_blank" class="works__modal__website-name">筑波大学本城研究室Webサイト<span class="material-symbols-outlined works__modal__new-window-icon">open_in_new</span></a>
+					<p class="works__modal__text">デザイン、コーディング、英語サイトの翻訳作業を私１人で行いました。</p>
+				</div>
+			</div>
+		</div>
+		<div class="works__modal__card works--2">
+			<div class="works__modal__card__inner">
+				<div class="works__modal__close">
+					<span class="material-symbols-outlined works__modal__close-icon">close</span>
+				</div>
+				<div class="works__modal__img">
+					<img src="img/portfolio_website.webp" alt="This website image">
+				</div>
+				<div class="works__modal__desc">
+					<p class="works__modal__website-name this-site">当ポートフォリオサイト</p>
+					<p class="works__modal__text">デザイン、コーディングを私１人で行いました。見辛くならない範囲でいろいろなアニメーションを使用してみました。</p>
+				</div>
+			</div>
+		</div>
+		<div class="works__modal__card works--3">
+			<div class="works__modal__card__inner">
+				<div class="works__modal__close">
+					<span class="material-symbols-outlined works__modal__close-icon">close</span>
+				</div>
+				<div class="works__modal__img">
+					<img src="img/dentalclinic_website.webp" alt="">
+				</div>
+				<div class="works__modal__desc">
+					<a href="https://www.hirameworks.site/dental-clinic/" target="_blank" class="works__modal__website-name">架空歯科医院Webサイト<span class="material-symbols-outlined works__modal__new-window-icon">open_in_new</span></a>
+					<p class="works__modal__text">デザインカンプからのコーディング・WordPress化を行いました。<br>
+						以下のユーザーネームとパスワードを入力して閲覧してください。<br>
+						ユーザーネーム: dental0630<br>
+						パスワード: Zm74X_ba</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section id="service" class="section service">
+		<div class="section__inner">
+			<h2 class="section__head">
+				<span class="section__head-main">Service</span>
+				<span class="section__head-sub">提供サービス</span>
+			</h2>
+			<div class="section__contents">
+				<div class="service__container">
+					<ul class="service__list">
+						<li class="service__item" style="--i:-1">
+							<div class="service__item__content" style="--j:1">
+								<div class="service__icon service__icon--1">
+									<span class="material-symbols-outlined service__icon--item">laptop_mac</span>
+								</div>
+								<h3 class="service__item-name">コーディング</h3>
+								<p class="service__item-text">
+									HTML / CSS / JavaScriptを用いて、デザインカンプ通りのコーディングを行います。
+								</p>
+							</div>
+						</li>
+						<li class="service__item" style="--i:1">
+							<div class="service__item__content" style="--j:2">
+								<div class="service__icon service__icon--2">
+									<i class="fa-brands fa-wordpress service__icon--item"></i>
+								</div>
+								<h3 class="service__item-name">WordPressサイト構築</h3>
+								<p class="service__item-text">
+									WordPressを用いてオリジナルテーマの作成を行います。もちろん既存テーマを用いたWebサイト作成も承ります。
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="about" class="section about">
+		<div class="section__inner">
+			<h2 class="section__head">
+				<span class="section__head-main">About me</span>
+				<span class="section__head-sub">自己紹介</span>
+			</h2>
+			<div class="section__contents">
+				<div class="about__myself">
+					<div class="about__img"><img src="./img/rabbit.webp" alt="profile picture" /></div>
+					<p class="about__introduction">
+						1988年大阪生まれ。現在は茨城県在住。<br>
+						生命科学分野で博士号取得後、研究員として４年間勤務。<br>
+						出産・育児期間を経て、現在はWebコーダーとしてフリーランスでお仕事をしています。
+					</p>
+				</div>
+				<div class="about__policy">
+					<h3 class="about__policy__head">お仕事の姿勢</h3>
+					<ul class="about__policy__list">
+						<li class="about__policy__item">
+							<span class="material-symbols-outlined">priority</span>
+							正確で丁寧なコーディングを心がけます
+						</li>
+						<li class="about__policy__item">
+							<span class="material-symbols-outlined">priority</span>
+							こまめな報告・連絡・相談を行います
+						</li>
+						<li class="about__policy__item">
+							<span class="material-symbols-outlined">priority</span>
+							心をこめて１つ１つのお仕事に取り組みます
+						</li>
+					</ul>
+				</div>
+				<!-- <div class="about__skills">
+            <h3 class="about__skills--title">Skills</h3>
+            <div class="about__skill__container">
+              <div class="about__skill">
+                <div class="about__skill__icon"><i class="fab fa-html5"></i></div>
+                <div class="about__skill__text">HTML</div>
+              </div>
+              <div class="about__skill">
+                <div class="about__skill__icon"><i class="fab fa-css3-alt"></i></div>
+                <div class="about__skill__text">CSS</div>
+              </div>
+              <div class="about__skill">
+                <div class="about__skill__icon"><i class="fab fa-js-square"></i></div>
+                <div class="about__skill__text">JavaScript</div>
+              </div>
+            </div>
+          </div> -->
+			</div>
+		</div>
+	</section>
+
+	<section id="contact" class="contact section">
+		<div class="section__inner">
+			<h2 class="section__head">
+				<span class="section__head-main">Contact</span>
+				<span class="section__head-sub">お問い合わせ</span>
+			</h2>
+			<div class="section__contents">
+				<a href="https://twitter.com/hirame_315" class="contact__x">
+					<div class="contact__x__icon">
+						<i class="fa-brands fa-x-twitter"></i>
+					</div>
+					<div class="contact__x__desc">
+						<p class="contact__x__text"> X (旧Twitter)にてお問い合わせを承っております。お気軽にDMをお送りください。</p>
+						<p class="contact__x__link" target="_blank">Go to X <span class="right-arrow">&#x21C0;</span></p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<a href="#hero" class="pagetop">
+		<span class="material-symbols-outlined">north</span>
+	</a>
+
+	<footer class="footer">
+		<small class="footer__copy">&copy; Akiko Miyatake Portfolio All rights reserved.</small>
+	</footer>
+
+</body>
+
+</html>
