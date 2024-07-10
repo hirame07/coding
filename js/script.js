@@ -121,7 +121,6 @@ const sectionObserver = new IntersectionObserver(
   // Reveal Service
 const revealService = (entries, observer) => {
   entries.forEach(entry => {
-    console.log(entry);
     entry.isIntersecting ? entry.target.classList.remove('service--hidden') : entry.target.classList.add('service--hidden');
   });
 }
