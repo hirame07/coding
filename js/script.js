@@ -47,9 +47,11 @@ worksModal.addEventListener('click', function(e) {
 });
 
 window.addEventListener('keydown', e => {
-  if (!e.key === 'Escape') return;
-  document.querySelector(".works__modal__card.is-open").classList.add('is-close');
-  document.querySelector(".works__modal__card.is-open").classList.remove('is-open');
+  if (e.key !== 'Escape') return;
+  const openCard = document.querySelector(".works__modal__card.is-open");
+  if (!openCard) return;
+  openCard.classList.add('is-close');
+  openCard.classList.remove('is-open');
   setTimeout(() => {
     worksModal.classList.remove('is-open');
     document.querySelector(".works__modal__card.is-close").classList.remove('is-close');
